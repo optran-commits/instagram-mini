@@ -167,6 +167,20 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 
 .empty-state{text-align:center;color:var(--text-dim);padding:60px 20px}
 .empty-state svg{width:64px;height:64px;fill:none;stroke:currentColor;stroke-width:1.4;margin-bottom:12px}
+.empty-state small{display:block;margin-top:6px;opacity:.85}
+
+/* spinner khi đang tải dữ liệu từ máy chủ */
+.spin{
+  width:30px;height:30px;margin:0 auto 14px;border-radius:50%;
+  border:3px solid var(--border);border-top-color:var(--text-dim);animation:spin .8s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* đăng nhập / đăng ký */
+.auth-error{font-size:13px;color:var(--danger);min-height:18px;text-align:center;line-height:1.4}
+.auth-switch{text-align:center;font-size:13px;color:var(--text-dim);padding-top:4px}
+.auth-switch a{color:var(--accent);font-weight:600;text-decoration:none}
+#modalAuth .modal-body{gap:10px}
 
 /* ===== Buttons / inputs ===== */
 .btn{padding:8px 16px;border-radius:8px;font-weight:600}
