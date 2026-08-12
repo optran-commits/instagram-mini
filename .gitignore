@@ -1,0 +1,14 @@
+# OMC operational state
+.omc/
+!.omc/skills/
+
+# OS / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# Dependencies / build
+node_modules/
+dist/
